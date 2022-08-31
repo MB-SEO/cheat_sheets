@@ -1,0 +1,17 @@
+# Datetime specification
+
+Type	Description
+%Y	Four-digit year
+%y	Two-digit year
+%m	Two-digit month [01, 12]
+%d	Two-digit day [01, 31]
+%H	Hour (24-hour clock) [00, 23]
+%I	Hour (12-hour clock) [01, 12]
+%M	Two-digit minute [00, 59]
+%S	Second [00, 61] (seconds 60, 61 account for leap seconds)
+%w	Weekday as integer [0 (Sunday), 6]
+%U	Week number of the year [00, 53]; Sunday is considered the first day of the week, and days before the first Sunday of the year are “week 0”
+%W	Week number of the year [00, 53]; Monday is considered the first day of the week, and days before the first Monday of the year are “week 0”
+%z	UTC time zone offset as +HHMM or -HHMM; empty if time zone naive
+%F	Shortcut for %Y-%m-%d (e.g., 2012-4-18)
+%D	Shortcut for %m/%d/%y (e.g., 04/18/12)
