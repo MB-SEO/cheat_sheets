@@ -1,0 +1,22 @@
+Mode	Description
+r	    Read-only mode
+w	    Write-only mode; creates a new file (erasing the data for any file with the same name)
+x	    Write-only mode; creates a new file, but fails if the file path already exists
+a	    Append to existing file (create the file if it does not already exist)
+r+	  Read and write
+b	    Add to mode for binary files (i.e., 'rb' or 'wb')
+t	    Text mode for files (automatically decoding bytes to Unicode). This is the default if not specified. Add t to other modes to use this (i.e., 'rt' or 'xt')
+
+
+
+
+Method	Description
+read([size])	          Return data from file as a string, with optional size argument indicating the number of bytes to read
+readlines([size])	      Return list of lines in the file, with optional size argument
+write(str)	            Write passed string to file
+writelines(strings)	    Write passed sequence of strings to the file
+close()	                Close the handle
+flush()	                Flush the internal I/O buffer to disk
+seek(pos)	              Move to indicated file position (integer)
+tell()	                Return current file position as integer
+closed	                True if the file is closed
